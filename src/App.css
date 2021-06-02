@@ -1,38 +1,137 @@
+/*  Scrollbars  */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #002930;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #04d9ff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topbar-editor-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-output-consoles-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  background-color: #171f24;
+}
+
+.input-console-div, .output-console-div {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.topbar-div {
+  /*height: 10%;*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.editor-div {
+  flex: 1;
+}
+
+.toggle-input-output-console-button-wrapper {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: snow;
+  font-size: 18px;
+  background-color: #002930;
+  box-shadow: 0px 0px 5px 3px #04d9ff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 8px;
+  user-select: none;
+  transition: all 0.7s ease;
+  z-index: 10;
+}
+.toggle-input-output-console-button-wrapper:hover {
+  cursor: pointer;
+  background-color: #004551;
+  transform: scale(1.0125);
+}
+
+.toggle-input-output-console-button {
+  left: 20px;
+  bottom: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .topbar-editor-container {
+    flex: 2;
   }
-  to {
-    transform: rotate(360deg);
+  .input-output-consoles-container {
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .topbar-editor-container {
+    flex: 3;
+  }
+  .input-output-consoles-container {
+    flex: 2;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .topbar-editor-container {
+    flex: 4;
+  }
+  .input-output-consoles-container {
+    flex: 3;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .App {
+    flex-direction: column;
+  }
+  .topbar-editor-container {
+    flex: 5;
+  }
+  .input-output-consoles-container {
+    display: none;
+    flex: 0;
+  }
+  #showIOConsole {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: none;
+    backdrop-filter: blur(15px);
+    z-index: 11;
+  }
+  #increaseToggleBtnZIndex {
+    z-index: 12
+  }
+  .toggle-input-output-console-button-wrapper {
+    display: flex;
   }
 }

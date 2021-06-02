@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Edit & Run",
+  "name": "Code Editor and Code Runner",
   "icons": [
     {
       "src": "favicon.ico",

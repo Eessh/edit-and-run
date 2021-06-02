@@ -1,0 +1,46 @@
+.output-console-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.output-text {
+    color: #04d9ff;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5% 0% 1% 10%;
+    user-select: none;
+}
+
+.output-textarea-wrapper {
+    flex: 1;
+    width: 90%;
+    padding: 2% 2% 4% 4%;
+}
+
+.output-textarea {
+    width: 100%;
+    height: 100%;
+    color: snow;
+    font-size: 20px;
+    background-color: #171f24;
+    border-width: 2px;
+    border-color: #004551;
+    outline: none;
+    border-radius: 10px;
+    resize: none;
+    overflow: auto;
+}
+.output-textarea:focus {
+    border-color: #00839b;
+}
+
+@media only screen and (max-width: 1020px) {
+    .output-textarea {
+        background: none;
+        backdrop-filter: blur(30px);
+    }
+}

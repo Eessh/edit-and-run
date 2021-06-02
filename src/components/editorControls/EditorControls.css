@@ -1,0 +1,49 @@
+.editor-controls-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.editor-controls-mode, .editor-controls-theme {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.editor-controls-fontsize {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width: 1200px) {
+    .editor-controls-wrapper {
+        align-items: center;
+    }
+    .editor-controls-mode, .editor-controls-theme, .editor-controls-fontsize {
+        flex: 0;
+    }
+    .editor-controls-mode, .editor-controls-theme {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .editor-controls-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 100px;
+    }
+    .editor-controls-mode, .editor-controls-theme {
+        flex: 3;
+    }
+    .editor-controls-fontsize {
+        flex: 2.5;
+        justify-content: center;
+    }
+}

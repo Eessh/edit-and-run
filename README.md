@@ -3,7 +3,7 @@
 ### Supported Languages: C, C++, C#, Java, Kotlin, Python, Ruby, Swift
 ### Also supports some nice themes
 
-### Live App: http://edit-and-run.netlify.app
+### Live App: https://edit-and-run.netlify.app
 
 ### To run on local server
 #### Clone this repo: `git clone -b master https://github.com/Eessh/edit-and-run.git`

@@ -1,13 +1,13 @@
 # Edit & Run
 ## Made using: React, ACE Editor
-### Supported Languages: C, C++, C#, Java, Kotlin, Python, Ruby, Swift
+### :large_blue_circle: Supported Languages: C, C++, C#, Java, Kotlin, Python, Ruby, Swift
 ### Also supports some nice themes
 
-### Live App: https://edit-and-run.netlify.app
+### :rocket: Live App: https://edit-and-run.netlify.app
 
 ### To run on local server
-#### Clone this repo: `git clone -b master https://github.com/Eessh/edit-and-run.git`
-#### Move into the root: `cd edit-and-run`
-#### Install required packages: `npm install`
-#### Run: `npm start`
-#### Production build: `npm build`
+#### Clone this repo: :heavy_dollar_sign:`git clone -b master https://github.com/Eessh/edit-and-run.git`
+#### Move into the cloned repo: :heavy_dollar_sign:`cd edit-and-run`
+#### Install required packages: :heavy_dollar_sign:`npm install`
+#### Run: :heavy_dollar_sign:`npm start`
+#### Production build: :heavy_dollar_sign:`npm build`
